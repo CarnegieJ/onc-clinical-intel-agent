@@ -1,4 +1,5 @@
 # 🏥 Oncology Clinical Intelligence Agent (Backend Demo)
+![Clinical Intelligence Agent Backend](img/CIAB_banner.png)
 
 [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/CarnegieJ/onc-clinical-intel-agent)
 
