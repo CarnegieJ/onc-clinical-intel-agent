@@ -1,0 +1,8 @@
+kill
+steal
+harm
+hack
+illegal
+exploit
+attack
+deny

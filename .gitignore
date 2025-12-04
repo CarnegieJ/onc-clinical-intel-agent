@@ -1,0 +1,11 @@
+.env
+# Local Jupyter checkpoints
+.ipynb_checkpoints/
+# VSCode settings
+.vscode/
+# Python virtual envs
+venv/
+ENV/
+env/
+__pycache__/
+data_ingestion/logs/
