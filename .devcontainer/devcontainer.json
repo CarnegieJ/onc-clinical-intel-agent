@@ -1,0 +1,29 @@
+ {
+  "name": "Oncology Clinical AI Agent (Python 3.10)",
+"image": "mcr.microsoft.com/devcontainers/python:1-3.10-bullseye",
+  "features": {
+    "ghcr.io/devcontainers/features/azure-cli:1": {}
+  },
+  
+  // 1. Install VS Code Extensions automatically
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-python.python",
+        "ms-toolsai.jupyter",
+        "ms-vscode.azure-account",
+        "ms-azuretools.vscode-azure-blobstorage" 
+      ]
+    }
+  },
+
+  // 2. The Setup Script
+  // CRITICAL: This relies on requirements.txt existing in your repo!
+  // It installs Python libraries first, then adds the Azure ML CLI extension.
+  "postCreateCommand": "pip install -r requirements.txt && az extension add --name ml --yes",
+
+  // 3. Environment Config
+  "remoteEnv": {
+    "PYTHONPATH": "${containerWorkspaceFolder}"
+  }
+}
