@@ -1,4 +1,6 @@
-# 🏥 Clinical Intelligence Agent (Backend Demo)
+# 🏥 Oncology Clinical Intelligence Agent (Backend Demo)
+
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/CarnegieJ/onc-clinical-intel-agent)
 
 ![Status](https://img.shields.io/badge/Status-Prototype-green)
 ![Tech Stack](https://img.shields.io/badge/Azure-Fabric%20%7C%20AI%20Foundry%20%7C%20Python-blue)
