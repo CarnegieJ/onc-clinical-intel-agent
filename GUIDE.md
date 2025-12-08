@@ -19,8 +19,7 @@ If you do not have an organizational tenant yet, the steps below explain an appr
 Follow these steps in order. They create a tenant and add the developer services needed to run the notebooks against Microsoft Fabric / OneLake.
 
 A. Sign up for an Office 365 E5 Trial (creates a tenant)
-1. Go to the Office 365 E5 trial sign-up page:
-   "$BROWSER" https://www.microsoft.com/microsoft-365/enterprise/office-365-e5
+1. Go to the Office 365 E5 trial sign-up page: https://www.microsoft.com/microsoft-365/enterprise/office-365-e5
 2. Create a new Microsoft account or sign in with a personal email. During sign-up you will create a new Microsoft 365 Tenant (organization).
 3. Verify identity (may require credit card). After sign-up you will have a tenant and admin user you control.
 4. Note the tenant admin email and password — you will use them in later steps.
@@ -30,21 +29,21 @@ B. Sign up for the Power Apps Developer Plan (developer tooling & maker features
 2. Choose the "Developer Plan" (free for individual developers) and enroll using the tenant admin account. This gives you access to maker tools and a personal dev environment in the same tenant.
 
 C. Sign up for a Microsoft Fabric free trial
-1. Sign in at the Microsoft Fabric trial page:
-   "$BROWSER" https://app.fabric.microsoft.com/
+1. Sign in at the Microsoft Fabric trial page: https://app.fabric.microsoft.com/
 2. Start a free trial and select the tenant you created during the Office 365 E5 sign-up.
-3. Create a Fabric workspace (you will get an AZURE_WORKSPACE_ID / workspace GUID). Note this workspace ID for your .env.
+3. Create a Fabric workspace (you will get an `AZURE_WORKSPACE_ID` / workspace GUID). Note this workspace ID for your .env.
 
 D. Quick checklist (what to record in .env)
-- AZURE_TENANT_ID — find under Azure Active Directory → Properties
-- AZURE_SUBSCRIPTION_ID — from your Azure subscription (if created)
-- AZURE_WORKSPACE_ID — Fabric workspace GUID (from Fabric URL)
-- AZURE_WORKSPACE_NAME — Fabric workspace name
+- `AZURE_TENANT_ID` — find under Azure Active Directory → Properties
+- `AZURE_SUBSCRIPTION_ID` — from your Azure subscription (if created)
+- `AZURE_WORKSPACE_ID` — Fabric workspace GUID (from Fabric URL)
+- `AZURE_WORKSPACE_NAME` — Fabric workspace name
 
 ---
 
 ## Visual diagram — how these accounts/services relate
 
+```
 Microsoft 365 Tenant (you create)
 +-------------------------------+
 |  - Tenant (Azure AD)          |
@@ -56,7 +55,7 @@ Microsoft 365 Tenant (you create)
            +--> Power Apps Developer Plan (developer tools attached to tenant)
            |
            +--> Microsoft Fabric free trial (creates Fabric workspace in tenant)
-
+```
 If you CANCEL the Office 365 E5 Trial before it expires:
 - Licenses provided by the E5 trial are removed or disabled for users.
 - The tenant (Azure AD) usually remains unless you delete it. Developer plans and Fabric workspace remain linked to the tenant but some services may stop working if they depended on trial licenses.
