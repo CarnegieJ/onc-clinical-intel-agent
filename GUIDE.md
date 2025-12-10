@@ -42,7 +42,7 @@ D. Quick checklist (what to record in .env)
 ---
 
 ## Visual diagram — how these accounts/services relate
-
+![Trials flow, M365 relationships](img/M365_E5_PPlat_Fabric_relationship.svg)
 ```
 Microsoft 365 Tenant (you create)
 +-------------------------------+

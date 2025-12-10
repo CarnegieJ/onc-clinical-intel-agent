@@ -1,0 +1,470 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="879.42523"
+   height="510.1879"
+   viewBox="0 0 879.42523 510.1879"
+   role="img"
+   aria-label="Microsoft 365 Tenant relationships with E5 Trial, Power Apps Developer Plan, Fabric Free Trial and E5 cancellation outcomes"
+   version="1.1"
+   id="svg20"
+   sodipodi:docname="M365_E5_PPlat_Fabric_relationship.svg"
+   inkscape:version="1.4.2 (f4327f4, 2025-05-13)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <title
+     id="title33">Microsoft  365 Tenant, E5 Trial, Power Apps Developer Plan, Fabric Trial</title>
+  <sodipodi:namedview
+     id="namedview20"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="1.8822581"
+     inkscape:cx="397.92631"
+     inkscape:cy="273.87318"
+     inkscape:window-width="2560"
+     inkscape:window-height="1369"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g32" />
+  <defs
+     id="defs2">
+    <rect
+       x="875.01288"
+       y="141.85091"
+       width="58.971722"
+       height="21.782349"
+       id="rect22" />
+    <rect
+       x="792.66498"
+       y="80.222794"
+       width="60.565552"
+       height="20.719795"
+       id="rect21" />
+    <rect
+       x="213.57326"
+       y="171.07112"
+       width="62.159382"
+       height="12.219366"
+       id="rect20" />
+    <style
+       id="style1"><![CDATA[
+      .box { fill:#cfe8ff; stroke:#124; stroke-width:2; rx:10; ry:10; }
+      .ellipse { fill:#e7ffd9; stroke:#1a3; stroke-width:2; }
+      .ellipse2 { fill:#fff6bf; stroke:#b38b00; stroke-width:2; }
+      .ellipse3 { fill:#ffd6e7; stroke:#b31568; stroke-width:2; }
+      .note-orange { fill:#ffe6cc; stroke:#c55a11; stroke-width:2; }
+      .note-red { fill:#ffd3d3; stroke:#a80000; stroke-width:2; }
+      .note-purple { fill:#ead9ff; stroke:#6a00a3; stroke-width:2; }
+      .label { font-family: Segoe UI, Arial, sans-serif; font-size:16px; fill:#111; }
+      .title { font-family: Segoe UI Semibold, Arial, sans-serif; font-size:22px; fill:#0b2d5a; }
+      .edge { stroke:#667; stroke-width:2; marker-end:url(#arrow); }
+      .edge-dash { stroke:#c55a11; stroke-width:2; stroke-dasharray:8 6; marker-end:url(#arrow-orange); }
+      .edge-tenant { stroke:#406080; stroke-width:3; marker-end:url(#arrow); }
+    ]]></style>
+    <!-- Arrow markers -->
+    <marker
+       id="arrow"
+       viewBox="0 0 10 10"
+       refX="9"
+       refY="5"
+       markerWidth="10"
+       markerHeight="10"
+       orient="auto">
+      <path
+         d="M 0,0 10,5 0,10 Z"
+         fill="#666677"
+         id="path1" />
+    </marker>
+    <marker
+       id="arrow-orange"
+       viewBox="0 0 10 10"
+       refX="9"
+       refY="5"
+       markerWidth="10"
+       markerHeight="10"
+       orient="auto">
+      <path
+         d="M 0,0 10,5 0,10 Z"
+         fill="#c55a11"
+         id="path2" />
+    </marker>
+    <rect
+       x="875.01288"
+       y="141.85091"
+       width="58.971722"
+       height="21.782349"
+       id="rect28" />
+  </defs>
+  <rect
+     style="fill:#1f241c;fill-opacity:0;stroke:#5da3ff;stroke-width:1.756;stroke-dasharray:7.024, 5.268;stroke-dashoffset:0;stroke-opacity:1"
+     id="Canvas"
+     width="877.66925"
+     height="508.43188"
+     x="0.87800002"
+     y="0.87800002" />
+  <!-- Diagram Title -->
+  <!-- Nodes -->
+  <!-- Tenant -->
+  <!-- E5 Trial -->
+  <!-- Power Apps Dev Plan -->
+  <!-- Fabric Free Trial -->
+  <!-- Outcome: Cancel E5 -->
+  <!-- Outcome: Delete Tenant -->
+  <!-- Outcome: Fabric Trial Ends -->
+  <!-- Edges -->
+  <!-- Tenant → E5 -->
+  <!-- Tenant → Power Apps Dev Plan -->
+  <!-- Power Apps Dev Plan → Fabric Trial (logical linkage through same tenant/capacity) -->
+  <!-- E5 → Cancel E5 outcome -->
+  <!-- Tenant → Delete Tenant outcome -->
+  <!-- Fabric → Fabric Trial Ends outcome -->
+  <g
+     id="g32"
+     transform="translate(-44.811804,-12.935196)">
+    <line
+       x1="671.45496"
+       y1="387.00885"
+       x2="664.37073"
+       y2="432.71973"
+       class="edge-dash"
+       id="line32"
+       style="stroke-width:1.46223;stroke-dasharray:5.84892, 4.38669;stroke-dashoffset:0" />
+    <line
+       x1="540.98572"
+       y1="140.67914"
+       x2="640.09039"
+       y2="188.11461"
+       class="edge-tenant"
+       id="line31" />
+    <line
+       x1="539.48413"
+       y1="138.49971"
+       x2="648.00415"
+       y2="321.04373"
+       class="edge-tenant"
+       id="line16"
+       style="stroke-width:3.14541;stroke-dasharray:none" />
+    <text
+       x="500"
+       y="40"
+       text-anchor="middle"
+       class="title"
+       id="text2">Microsoft 365 Tenant → E5 Trial, Power Apps Developer Plan, Fabric Free Trial</text>
+    <rect
+       x="340"
+       y="70"
+       width="320"
+       height="70"
+       class="box"
+       id="rect2" />
+    <text
+       x="500"
+       y="101"
+       text-anchor="middle"
+       class="label"
+       id="text3"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:17.3333px;font-family:'Segoe UI', Arial, sans-serif;-inkscape-font-specification:'Segoe UI, Arial, sans-serif, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-anchor:middle;fill:#111111">Microsoft 365 Tenant</text>
+    <ellipse
+       cx="183.32819"
+       cy="203.87489"
+       rx="119.89835"
+       ry="53.073162"
+       class="ellipse"
+       id="ellipse3" />
+    <text
+       x="183.59383"
+       y="191.28107"
+       text-anchor="middle"
+       class="label"
+       id="text4"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:16px;font-family:'Segoe UI';-inkscape-font-specification:'Segoe UI, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-anchor:middle;fill:#111111">Office 365 E5 Trial License</text>
+    <text
+       x="291.5162"
+       y="133.33528"
+       text-anchor="middle"
+       class="label"
+       font-size="13"
+       id="text5"
+       transform="scale(0.62978971,1.5878316)"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:13.3333px;font-family:'Segoe UI';-inkscape-font-specification:'Segoe UI, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-anchor:middle;fill:#111111;stroke-width:1.58783"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:13.3333px;font-family:'Segoe UI';-inkscape-font-specification:'Segoe UI, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal"
+         id="tspan24">(Enterprise features, identity &amp; licenses)</tspan></text>
+    <ellipse
+       cx="761.59381"
+       cy="211.7652"
+       rx="133.30434"
+       ry="47.010426"
+       class="ellipse2"
+       id="ellipse5" />
+    <text
+       x="760"
+       y="209"
+       text-anchor="middle"
+       class="label"
+       id="text6"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:16px;font-family:'Segoe UI';-inkscape-font-specification:'Segoe UI, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-anchor:middle;fill:#111111"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:16px;font-family:'Segoe UI';-inkscape-font-specification:'Segoe UI, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal"
+         id="tspan32">Power Apps Developer Plan</tspan></text>
+    <text
+       x="1257.9824"
+       y="139.60052"
+       text-anchor="middle"
+       class="label"
+       font-size="13"
+       id="text7"
+       transform="scale(0.60583132,1.6506245)"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:13.3333px;font-family:'Segoe UI';-inkscape-font-specification:'Segoe UI, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-anchor:middle;fill:#111111;stroke-width:1.65062"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:13.3333px;font-family:'Segoe UI';-inkscape-font-specification:'Segoe UI, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal"
+         id="tspan23">(Personal developer environment + Dataverse)</tspan></text>
+    <ellipse
+       cx="762.12512"
+       cy="351.23395"
+       rx="137.47061"
+       ry="46.48946"
+       class="ellipse3"
+       id="ellipse7" />
+    <text
+       x="760"
+       y="345"
+       text-anchor="middle"
+       class="label"
+       id="text8"
+       inkscape:highlight-color="#77ee66"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:16px;font-family:'Segoe UI';-inkscape-font-specification:'Segoe UI, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-anchor:middle;fill:#111111"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:16px;font-family:'Segoe UI';-inkscape-font-specification:'Segoe UI, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal"
+         id="tspan29">Microsoft Fabric Free Trial</tspan></text>
+    <text
+       x="1313.4757"
+       y="214.375"
+       text-anchor="middle"
+       class="label"
+       font-size="13"
+       id="text9"
+       transform="scale(0.57861748,1.7282575)"
+       style="font-size:13.3333px;font-family:'Segoe UI';text-anchor:middle;fill:#111111;stroke-width:1.72826;-inkscape-font-specification:'Segoe UI, Normal';font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:13.33329964px;font-family:'Segoe UI';-inkscape-font-specification:'Segoe UI, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal"
+         id="tspan28">(60-day capacity; items need capacity to stay active)</tspan></text>
+    <rect
+       x="59.380589"
+       y="319.53482"
+       width="265.45474"
+       height="75.176277"
+       class="note-orange"
+       rx="8.2954607"
+       ry="10.023503"
+       id="rect9" />
+    <text
+       x="194.49872"
+       y="340.62296"
+       text-anchor="middle"
+       class="label"
+       id="text10">Cancel E5 but keep Tenant</text>
+    <text
+       x="228.98726"
+       y="300.55338"
+       text-anchor="middle"
+       class="label"
+       font-size="13"
+       id="text11"
+       transform="scale(0.83342835,1.1998632)"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16px;font-family:'Segoe UI', Arial, sans-serif;-inkscape-font-specification:'Segoe UI, Arial, sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-anchor:middle;fill:#111111;stroke-width:0.833429"><tspan
+         sodipodi:role="line"
+         id="tspan26"
+         x="228.98726"
+         y="300.55338">Power Apps Dev Plan and Fabric continue</tspan><tspan
+         sodipodi:role="line"
+         id="tspan27"
+         x="228.98726"
+         y="320.55338">(tenant persists)</tspan></text>
+    <rect
+       x="58.875591"
+       y="423.71707"
+       width="330.21796"
+       height="63.966892"
+       class="note-red"
+       rx="10.319311"
+       ry="8.5289192"
+       id="rect11" />
+    <text
+       x="220.49826"
+       y="455.87976"
+       text-anchor="middle"
+       class="label"
+       id="text12"
+       transform="scale(1.015811,0.98443512)"
+       style="stroke-width:1.01539">Delete Tenant</text>
+    <text
+       x="220.49826"
+       y="478.21844"
+       text-anchor="middle"
+       class="label"
+       font-size="13"
+       id="text13"
+       transform="scale(1.015811,0.98443512)"
+       style="stroke-width:1.01539">All services and environments lost</text>
+    <rect
+       x="546.69647"
+       y="433.97842"
+       width="363.57355"
+       height="75.043144"
+       class="note-purple"
+       rx="9.5677252"
+       ry="10.005753"
+       id="rect13" />
+    <text
+       x="720.24847"
+       y="459"
+       text-anchor="middle"
+       class="label"
+       id="text14">Fabric Trial Expires</text>
+    <text
+       x="720.24847"
+       y="481"
+       text-anchor="middle"
+       class="label"
+       font-size="13"
+       id="text15"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16px;font-family:'Segoe UI', Arial, sans-serif;-inkscape-font-specification:'Segoe UI, Arial, sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-anchor:middle;fill:#111111"><tspan
+         sodipodi:role="line"
+         id="tspan30"
+         x="720.24847"
+         y="481">Non–Power BI Fabric items become inactive</tspan><tspan
+         sodipodi:role="line"
+         id="tspan31"
+         x="720.24847"
+         y="501">unless reassigned to paid capacity</tspan></text>
+    <line
+       x1="339.83264"
+       y1="106.69931"
+       x2="238.11218"
+       y2="154.09175"
+       class="edge-tenant"
+       id="line15" />
+    <line
+       x1="185.76039"
+       y1="258.03094"
+       x2="180.53577"
+       y2="317.30777"
+       class="edge-dash"
+       id="line18" />
+    <text
+       xml:space="preserve"
+       id="text20"
+       style="text-align:start;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect20);display:inline;fill:#000000"><tspan
+         x="213.57422"
+         y="194.23898"
+         id="tspan2"><tspan
+           dx="0 3.6458311 2.1015615 3.1770811 3.2708311 1.9401035 1.8749981"
+           style="font-size:5.33333px;fill-opacity:0.261044"
+           id="tspan1">Step. 1</tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       id="text21"
+       style="font-size:14.6667px;text-align:start;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect21);display:inline;fill:#000000;fill-opacity:0"
+       transform="translate(-636.27935,76.317052)"><tspan
+         x="792.66406"
+         y="93.603532"
+         id="tspan4"><tspan
+           style="stroke:#11aa33"
+           id="tspan3">Step. 1</tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       id="text22"
+       style="font-size:14.6667px;text-align:start;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect22);display:inline;fill:#000000;fill-opacity:0;stroke:#020801;stroke-opacity:1"
+       transform="translate(-137.06941,29.220223)"><tspan
+         x="875.01367"
+         y="155.23244"
+         id="tspan5">Step. 2</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:13.3333px;font-family:Sans;-inkscape-font-specification:'Sans, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000000;fill-opacity:0;stroke:#5da3ff;stroke-opacity:1"
+       x="92.133682"
+       y="227.44987"
+       id="text25"><tspan
+         sodipodi:role="line"
+         id="tspan25"
+         x="92.133682"
+         y="227.44987"
+         style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.6667px;font-family:Cambria;-inkscape-font-specification:'Cambria, Italic';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#1f241c;stroke:#5da3ff;stroke-opacity:1"># Creates M365 tenant (*.onmicrosoft.com)</tspan></text>
+    <line
+       x1="366.9483"
+       y1="140.03877"
+       x2="363.14081"
+       y2="418.18085"
+       class="edge-dash"
+       id="line27" />
+    <text
+       xml:space="preserve"
+       id="text28"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14.6667px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect28);display:inline;fill:#000000;fill-opacity:0;stroke:#020801;stroke-opacity:1"
+       transform="translate(-140.78835,166.82091)"><tspan
+         x="875.01367"
+         y="155.23244"
+         id="tspan6">Step. 3</tspan></text>
+    <text
+       x="867.23871"
+       y="71.558128"
+       text-anchor="middle"
+       class="label"
+       font-size="13"
+       id="text33"
+       transform="scale(0.57861748,1.7282575)"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:13.3333px;font-family:'Segoe UI';-inkscape-font-specification:'Segoe UI, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-anchor:middle;fill:#111111;stroke-width:1.72826"><tspan
+         sodipodi:role="line"
+         id="tspan33"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:13.3333px;font-family:'Segoe UI';-inkscape-font-specification:'Segoe UI, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal"
+         x="867.23871"
+         y="71.558128">(AAD, IAM, MFA, OAuth)</tspan></text>
+  </g>
+  <metadata
+     id="metadata33">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:title>Microsoft  365 Tenant, E5 Trial, Power Apps Developer Plan, Fabric Trial</dc:title>
+        <dc:date>December 10, 2025</dc:date>
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>CarnegieJ@IAYFconsulting.com</dc:title>
+          </cc:Agent>
+        </dc:creator>
+        <dc:rights>
+          <cc:Agent>
+            <dc:title>All rights reserved</dc:title>
+          </cc:Agent>
+        </dc:rights>
+        <dc:publisher>
+          <cc:Agent>
+            <dc:title>IAYF Consulting</dc:title>
+          </cc:Agent>
+        </dc:publisher>
+        <dc:identifier>M365_E5_PPlat_Fabric_relationship.svg</dc:identifier>
+        <cc:license
+           rdf:resource="http://creativecommons.org/licenses/by/4.0/" />
+      </cc:Work>
+      <cc:License
+         rdf:about="http://creativecommons.org/licenses/by/4.0/">
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Reproduction" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Distribution" />
+        <cc:requires
+           rdf:resource="http://creativecommons.org/ns#Notice" />
+        <cc:requires
+           rdf:resource="http://creativecommons.org/ns#Attribution" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#DerivativeWorks" />
+      </cc:License>
+    </rdf:RDF>
+  </metadata>
+</svg>
