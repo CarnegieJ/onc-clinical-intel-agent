@@ -6,6 +6,8 @@ DESCRIPTION: Middleware to detect/redact PII and enforce safety policies.
 
 import re
 import os
+import logging
+from typing import Dict, List, Optional, Any
 from dotenv import load_dotenv, find_dotenv
 
 # Import isolated configuration
@@ -24,10 +26,12 @@ try:
 except ImportError:
     AZURE_AVAILABLE = False
 
+logger = logging.getLogger(__name__)
+
 load_dotenv(find_dotenv(), override=True)
 
 class ClinicalGuardrails:
-    def __init__(self, use_simulation=True, keywords_file="unsafe_keywords.txt"):
+    def __init__(self, use_simulation: bool = True, keywords_file: str = "unsafe_keywords.txt") -> None:
         self.use_simulation = use_simulation
         self.pii_patterns = PATTERNS
         self.unsafe_keywords = self._load_keywords(keywords_file)
@@ -35,7 +39,7 @@ class ClinicalGuardrails:
         # Setup Azure Client
         if not self.use_simulation:
             if not AZURE_AVAILABLE:
-                print("⚠️  Library 'azure-ai-contentsafety' missing. Reverting to Sim Mode.")
+                logger.warning("Library 'azure-ai-contentsafety' missing. Reverting to Sim Mode.")
                 self.use_simulation = True
                 return
 
@@ -47,7 +51,7 @@ class ClinicalGuardrails:
             else:
                 self.use_simulation = True
 
-    def _load_keywords(self, filename):
+    def _load_keywords(self, filename: str) -> List[str]:
         """Loads simulation keywords from a text file relative to this script."""
         keywords = []
         try:
@@ -58,7 +62,7 @@ class ClinicalGuardrails:
             with open(full_path, 'r') as f:
                 keywords = [line.strip().lower() for line in f if line.strip()]
         except FileNotFoundError:
-            print(f"⚠️  Warning: '{filename}' not found. Using default unsafe list.")
+            logger.warning(f"Warning: '{filename}' not found. Using default unsafe list.")
             keywords = ["kill", "harm", "hack"]
         return keywords
 
@@ -80,13 +84,13 @@ class ClinicalGuardrails:
             "sanitized_text": safe_text
         }
 
-    def check_content_safety(self, text: str):
+    def check_content_safety(self, text: str) -> Dict[str, Any]:
         if self.use_simulation:
             return self._simulate_safety_check(text)
         else:
             return self._call_azure_safety_api(text)
 
-    def _simulate_safety_check(self, text):
+    def _simulate_safety_check(self, text: str) -> Dict[str, Any]:
         """Checks against loaded keyword list"""
         text_lower = text.lower()
         for word in self.unsafe_keywords:
@@ -94,7 +98,7 @@ class ClinicalGuardrails:
                 return {"safe": False, "category": "Violence/Harm (Simulated)", "confidence": 0.95}
         return {"safe": True, "category": "None", "confidence": 0.0}
 
-    def _call_azure_safety_api(self, text):
+    def _call_azure_safety_api(self, text: str) -> Dict[str, Any]:
         """Real Azure AI Content Safety Call"""
         try:
             request = AnalyzeTextOptions(text=text)
@@ -110,10 +114,10 @@ class ClinicalGuardrails:
             return {"safe": True, "category": "None", "confidence": 0.0}
             
         except Exception as e:
-            print(f"❌ Azure API Error: {e}")
+            logger.error(f"Azure API Error: {e}")
             return {"safe": False, "category": "API_ERROR", "confidence": 1.0}
 
-    def validate_prompt(self, user_prompt: str):
+    def validate_prompt(self, user_prompt: str) -> Dict[str, Any]:
         """Master Validation Pipeline"""
         # 1. PII Check
         pii = self.scan_for_pii(user_prompt)

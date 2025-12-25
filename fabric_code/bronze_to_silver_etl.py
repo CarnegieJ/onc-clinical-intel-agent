@@ -10,8 +10,11 @@ DEPLOYMENT: Copy this code into a Microsoft Fabric Notebook.
 
 import tarfile
 import os
+import logging
 from glob import glob
 from pyspark.sql.functions import input_file_name, regexp_extract, col
+
+logger = logging.getLogger(__name__)
 
 # --- CONFIGURATION ---
 # The "Lakehouse" mount point is standard in Fabric
@@ -21,14 +24,14 @@ EXTRACT_PATH = f"{BASE_PATH}/Staging/Clinical"
 
 # --- STEP 1: UNPACK (Standard Python) ---
 # Spark cannot read inside .tar.gz files easily, so we unzip them first.
-print("📦 Step 1: Extracting Clinical Data from Archives...")
+logger.info("Step 1: Extracting Clinical Data from Archives...")
 os.makedirs(EXTRACT_PATH, exist_ok=True)
 
 # Find all uploaded tar.gz files
 archives = glob(f"{RAW_PATH}/*/*.tar.gz")
 
 if not archives:
-    print("❌ No files found! Did you run the ingestion pipeline?")
+    logger.error("No files found! Did you run the ingestion pipeline?")
 else:
     for archive in archives:
         try:
@@ -42,12 +45,12 @@ else:
                         # Rename it to avoid collisions (e.g., study1_patient.txt)
                         member.name = f"{study_id}_patient_data.txt" 
                         tar.extract(member, path=EXTRACT_PATH)
-                        print(f"   -> Extracted: {member.name}")
+                        logger.info(f"Extracted: {member.name}")
         except Exception as e:
-            print(f"   ⚠️ Error reading {archive}: {e}")
+            logger.warning(f"Error reading {archive}: {e}")
 
 # --- STEP 2: LOAD & CLEAN (PySpark) ---
-print("\n✨ Step 2: Loading into Delta Table...")
+logger.info("Step 2: Loading into Delta Table...")
 
 # cBioPortal files have comments starting with '#'. We tell Spark to ignore them.
 df = spark.read.option("header", "true") \
@@ -70,8 +73,8 @@ for name in df_enriched.columns:
 table_name = "Clinical_Patients_Silver"
 df_enriched.write.format("delta").mode("overwrite").saveAsTable(table_name)
 
-print(f"\n🎉 Success! Data saved to Delta Table: '{table_name}'")
-print(f"📊 Total Records: {df_enriched.count()}")
+logger.info(f"Success! Data saved to Delta Table: '{table_name}'")
+logger.info(f"Total Records: {df_enriched.count()}")
 
 # Show a sample
 display(df_enriched.limit(8))
